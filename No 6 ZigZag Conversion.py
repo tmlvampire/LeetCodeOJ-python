@@ -14,6 +14,8 @@ __author__ = 'Young'
 class Solution:
     # @return a string
     def convert(self, s, nRows):
+        if nRows == 1:
+            return s
         bigList = []
         for i in range(nRows):
             smallList = []
@@ -27,9 +29,10 @@ class Solution:
                 distance = (nRows-1)-y
             lineNumber = nRows-1-distance
             bigList[lineNumber].append(s[i])
-
+        result = ""
         for i in range(nRows):
-
+            result += "".join(bigList[i])
+        return result
 
         print bigList
 
@@ -38,4 +41,4 @@ class Solution:
 
 
 test = Solution()
-print test.convert("abcdefghijklmn",5)
+print test.convert("abcd",1)
