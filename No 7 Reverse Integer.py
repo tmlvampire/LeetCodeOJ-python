@@ -23,17 +23,32 @@ class Solution:
     def reverse(self, x):
         if x == 0:
             return 0
+
+        new_sysmax = int(math.pow(2,31)-1)
         minus = False
         if x < 0:
             minus = True
             x = -x
         else:
             minus = False
+        bit = []
+        while x != 0:
+            bit.append(x%10)
+            x /= 10
+        result = 0
+        while len(bit) != 0:
+            x = x*10 + bit.pop(0)
 
-        return 0
+        if x > new_sysmax:
+            return 0
+
+        if minus == True:
+            return -x
+        else:
+            return x
 
 
 
 test = Solution()
-new_sysmax = int(math.pow(2,31)-1)
-print new_sysmax
+print int(math.pow(2,31)-1)
+print test.reverse(-10000000)
