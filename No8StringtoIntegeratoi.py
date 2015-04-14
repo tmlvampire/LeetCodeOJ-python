@@ -28,15 +28,49 @@ __author__ = 'Young'
 #
 # If no valid conversion could be performed, a zero value is returned.
 # If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
-
 class Solution:
     # @return an integer
-    def atoi(self, str):
+    def myAtoi(self, str):
+    # filter blank
+        while len(str) != 0 and str[0] == ' ':
+            str = str[1:]
+        resultStr = str
+        if len(resultStr) == 0:
+            return 0
+        minus = False
+    # the first non-number char , get minus or plus , if other char, reply none
+        firstChar = resultStr[0]
+        if firstChar == '+':
+            minus = False
+            resultStr = resultStr[1:]
+        elif firstChar == '-':
+            minus = True
+            resultStr = resultStr[1:]
+        elif firstChar >= '0' and firstChar <= '9':
+            pass
+        else:
+            return 0
+    # filter first a few 0
+    # cal the number
+        resultInt = 0
+        for i in range(len(resultStr)):
+            if resultStr[i] >= '0' and resultStr[i] <= '9':
+                resultInt = resultInt * 10 + ( ord(resultStr[i]) - 48 )
+            else:
+                break
+
+        if minus == True:
+            resultInt *= -1
+
+        if resultInt >= 2147483647:
+            return 2147483647
+        if resultInt <= -2147483648:
+            return -2147483648
+
+        return resultInt
 
 
-
-
-
-
-        return 0
-
+a = "1234"
+b = a[0]
+if b >= '0' and b <= '9':
+    print "true"
