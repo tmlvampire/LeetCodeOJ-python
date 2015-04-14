@@ -1,5 +1,5 @@
 __author__ = 'Young'
-
+import unittest
 # Implement atoi to convert a string to an integer.
 #
 # Hint: Carefully consider all possible input cases.
@@ -33,3 +33,30 @@ __author__ = 'Young'
 class Solution:
     # @return an integer
     def atoi(self, str):
+        #
+
+
+
+
+
+        return 0
+
+
+
+
+class SolutionTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.x = Solution()
+
+    def runTest(self):
+        assert -12345 == x.atoi("-12345"), 'Not equallll'
+        # assert 1234==test.atoi("+1,234")
+        # assert 0==test.atoi("")
+        # assert 0==test.atoi("   ")
+        # assert -8, test.atoi("   -0000008")
+        # assert 0, test.atoi("        000000")
+
+
+if __name__ == '__main__':
+    unittest.main
