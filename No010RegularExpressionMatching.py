@@ -25,6 +25,27 @@ class Solution:
     # @param p, a string
     # @return a boolean
     def isMatch(self, s, p):
+        length = len(p)
+        if length == 0:
+            return False
+
+        statusAll = []
+        i = 0
+        while i < length:
+            statusOne = []
+            statusOne.append(p[i])
+            i += 1
+            if i < length and p[i] == '*':
+                    statusOne.append(p[i])
+            statusAll.append(statusOne)
+
+
+
+
+
+
+
+
 
 
         return False
