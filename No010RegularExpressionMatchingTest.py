@@ -1,3 +1,4 @@
+# coding=utf-8
 __author__ = 'Young'
 import unittest
 from No010RegularExpressionMatching import Solution

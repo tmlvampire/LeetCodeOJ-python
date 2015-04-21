@@ -1,3 +1,4 @@
+# coding=utf-8
 __author__ = 'Young'
 
 #Implement regular expression matching with support for '.' and '*'.
@@ -11,13 +12,13 @@ __author__ = 'Young'
 #bool isMatch(const char *s, const char *p)
 
 #Some examples:
-#isMatch("aa","a") → false
-#isMatch("aa","aa") → true
-#isMatch("aaa","aa") → false
-#isMatch("aa", "a*") → true
-#isMatch("aa", ".*") → true
-#isMatch("ab", ".*") → true
-#isMatch("aab", "c*a*b") → true
+# isMatch("aa","a") → false
+# isMatch("aa","aa") → true
+# isMatch("aaa","aa") → false
+# isMatch("aa", "a*") → true
+# isMatch("aa", ".*") → true
+# isMatch("ab", ".*") → true
+# isMatch("aab", "c*a*b") → true
 
 class Solution:
     # @param s, a string
