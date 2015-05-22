@@ -62,34 +62,34 @@ def test_7():
 def test_8():
     errorMessage = "Not equal"
     x = Solution8()
-    assert( x.myAtoi("   +0 123") == 0 , errorMessage)
-    assert( x.myAtoi("") == 0 , errorMessage)
-    assert(-12345 == x.myAtoi("-12345"), errorMessage)
-    assert(1 == x.myAtoi("+1,234"), errorMessage)
-    assert(0 == x.myAtoi("   "), errorMessage)
-    assert(-8 == x.myAtoi("       -008"))
-    assert(0 == x.myAtoi("      000000"))
+    assert x.myAtoi("   +0 123") == 0
+    assert x.myAtoi("") == 0
+    assert -12345 == x.myAtoi("-12345")
+    assert 1 == x.myAtoi("+1,234")
+    assert 0 == x.myAtoi("   ")
+    assert -8 == x.myAtoi("       -008")
+    assert 0 == x.myAtoi("      000000")
 
 def test_9():
     x = Solution9()
     print 0
-    assert( True , x.isPalindrome(0))
+    assert( True == x.isPalindrome(0))
     print 1230321
-    assert( True , x.isPalindrome(1230321))
+    assert( True == x.isPalindrome(1230321))
     print 123321
-    assert( True , x.isPalindrome(123321))
+    assert( True == x.isPalindrome(123321))
     print 12321
-    assert( True , x.isPalindrome(12321))
+    assert( True == x.isPalindrome(12321))
     print 989898989
-    assert( True , x.isPalindrome(989898989))
+    assert( True == x.isPalindrome(989898989))
     print 88888
-    assert( True , x.isPalindrome(88888))
+    assert( True == x.isPalindrome(88888))
     print 1000021
-    assert( False , x.isPalindrome(1000021))
+    assert( False == x.isPalindrome(1000021))
     print 123456
-    assert( False , x.isPalindrome(123456))
+    assert( False == x.isPalindrome(123456))
     print 1021
-    assert( False , x.isPalindrome(1021))
+    assert( False == x.isPalindrome(1021))
 
 def test_10():
     x = Solution10()
