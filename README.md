@@ -3,7 +3,6 @@
 Using python to go through LeetCode OJ
 
 
-[![Build Status](https://travis-ci.org/yyq/HelloWorldPython.png?branch=master)](https://travis-ci.org/yyq/HelloWorldPython)
+[![Build Status](https://travis-ci.org/yyq/LeetCodeOJ-python.svg?branch=master)](https://travis-ci.org/yyq/LeetCodeOJ-python)
 
-
-[![Coverage Status](https://coveralls.io/repos/yyq/HelloWorldPython/badge.png?branch=master)](https://coveralls.io/r/yyq/HelloWorldPython?branch=master)
+[![Coverage Status](https://coveralls.io/repos/yyq/LeetCodeOJ-python/badge.svg)](https://coveralls.io/r/yyq/LeetCodeOJ-python)
