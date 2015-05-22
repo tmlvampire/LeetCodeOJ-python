@@ -62,13 +62,13 @@ def test_7():
 def test_8():
     errorMessage = "Not equal"
     x = Solution8()
-    assert(0, x.myAtoi("   +0 123") , errorMessage)
-    assert(0, x.myAtoi("") , errorMessage)
-    assert(-12345, x.myAtoi("-12345"), errorMessage)
-    assert(1, x.myAtoi("+1,234"), errorMessage)
-    assert(0, x.myAtoi("   "), errorMessage)
-    assert(-8, x.myAtoi("       -008"))
-    assert(0, x.myAtoi("      000000"))
+    assert( x.myAtoi("   +0 123") == 0 , errorMessage)
+    assert( x.myAtoi("") == 0 , errorMessage)
+    assert(-12345 == x.myAtoi("-12345"), errorMessage)
+    assert(1 == x.myAtoi("+1,234"), errorMessage)
+    assert(0 == x.myAtoi("   "), errorMessage)
+    assert(-8 == x.myAtoi("       -008"))
+    assert(0 == x.myAtoi("      000000"))
 
 def test_9():
     x = Solution9()
