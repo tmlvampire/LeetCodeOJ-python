@@ -9,7 +9,7 @@ __author__ = 'Young'
 # Input: numbers={2, 7, 11, 15}, target=9
 # Output: index1=1, index2=2
 
-class Solution:
+class Solution1:
     # @return a tuple, (index1, index2)
     def twoSum(self, num, target):
         dictionary = {}
@@ -23,6 +23,6 @@ class Solution:
         return dictionary
 
 
-xyz = Solution()
-
-print xyz.twoSum([3,2,4],6)
+# xyz = Solution()
+#
+# print xyz.twoSum([3,2,4],6)
