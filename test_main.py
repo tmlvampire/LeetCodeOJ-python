@@ -93,10 +93,10 @@ def test_9():
 
 def test_10():
     x = Solution10()
-    assert(False, x.isMatch("aa","a"))
-    assert(True , x.isMatch("aa","aa"))
-    assert(False , x.isMatch("aaa","aa"))
-    assert(True , x.isMatch("aa","a*"))
-    assert(True , x.isMatch("aa",".*"))
-    assert(True , x.isMatch("ab",".*"))
-    assert(True , x.isMatch("aab","c*a*b"))
+    assert(False == x.isMatch("aa","a"))
+    assert(True == x.isMatch("aa","aa"))
+    assert(False == x.isMatch("aaa","aa"))
+    assert(True == x.isMatch("aa","a*"))
+    assert(True == x.isMatch("aa",".*"))
+    assert(True == x.isMatch("ab",".*"))
+    assert(True == x.isMatch("aab","c*a*b"))
