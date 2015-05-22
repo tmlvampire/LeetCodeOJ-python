@@ -47,6 +47,3 @@ class Solution9:
                     smallten *= 10
 
             return True
-
-x = Solution()
-print x.isPalindrome(1021)

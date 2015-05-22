@@ -38,14 +38,4 @@ class Solution10:
             if i < length and p[i] == '*':
                     statusOne.append(p[i])
             statusAll.append(statusOne)
-
-
-
-
-
-
-
-
-
-
         return False
