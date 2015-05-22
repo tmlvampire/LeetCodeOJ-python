@@ -18,7 +18,7 @@ __author__ = 'Young'
 #Test cases had been added to test the overflow behavior.
 
 
-class Solution:
+class Solution7:
     # @return an integer
     def reverse(self, x):
         if x == 0:
@@ -49,6 +49,3 @@ class Solution:
 
 
 
-test = Solution()
-print int(math.pow(2,31)-1)
-print test.reverse(-10000000)

@@ -10,7 +10,7 @@ __author__ = 'Young'
 #         self.val = x
 #         self.next = None
 
-class Solution:
+class Solution2:
     # @return a ListNode
     def addTwoNumbers(self, l1, l2):
         l3 = ListNode(0)
@@ -52,16 +52,3 @@ class ListNode:
         self.val = x
         self.next = None
 
-test = Solution()
-l1 = ListNode(9)
-l1.next = ListNode(8)
-#l1.next.next = ListNode(9)
-
-l2 = ListNode(1)
-#l2.next = ListNode(1)
-#l2.next.next = ListNode(1)
-
-x =  test.addTwoNumbers(l1,l2)
-while x != None:
-    print x.val
-    x = x.next

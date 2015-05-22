@@ -4,7 +4,7 @@ __author__ = 'Young'
 # For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3.
 # For "bbbbb" the longest substring is "b", with the length of 1.
 
-class Solution:
+class Solution3:
     # @return an integer
     def lengthOfLongestSubstring(self, s):
         listchar = []
@@ -25,12 +25,3 @@ class Solution:
                 max = listmax[position]
             position += 1
         return max
-
-
-
-
-
-test = Solution()
-print test.lengthOfLongestSubstring("bbbbbb")
-#x = [1,2,3,4,5]
-#print x[:3]

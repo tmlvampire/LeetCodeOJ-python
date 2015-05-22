@@ -4,7 +4,7 @@ __author__ = 'Young'
 # Find the median of the two sorted arrays.
 # The overall run time complexity should be O(log (m+n)).
 
-class Solution:
+class Solution4:
     # @return a float
     def findMedianSortedArrays(self, A, B):
         m = len(A)
@@ -30,7 +30,3 @@ class Solution:
                 return Solution.findMedianSortedArrays(self, A[x:m], B[0:n-x])
             return 0
 
-
-
-test = Solution()
-print test.findMedianSortedArrays([1, 2, 6, 7,9], [3, 4, 5, 8,9])

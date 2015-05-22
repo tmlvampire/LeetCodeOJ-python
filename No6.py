@@ -11,7 +11,7 @@ __author__ = 'Young'
 #string convert(string text, int nRows);
 #convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
-class Solution:
+class Solution6:
     # @return a string
     def convert(self, s, nRows):
         if nRows == 1:
@@ -36,9 +36,3 @@ class Solution:
 
         print bigList
 
-
-
-
-
-test = Solution()
-print test.convert("abcd",1)

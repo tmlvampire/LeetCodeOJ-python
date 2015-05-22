@@ -12,14 +12,7 @@ from No010RegularExpressionMatching import Solution
 # isMatch("aab", "c*a*b") → true
 class test10(unittest.TestCase):
     def test_Solution(self):
-        x = Solution()
-        self.assertEqual(False, x.isMatch("aa","a"))
-        self.assertEqual(True , x.isMatch("aa","aa"))
-        self.assertEqual(False , x.isMatch("aaa","aa"))
-        self.assertEqual(True , x.isMatch("aa","a*"))
-        self.assertEqual(True , x.isMatch("aa",".*"))
-        self.assertEqual(True , x.isMatch("ab",".*"))
-        self.assertEqual(True , x.isMatch("aab","c*a*b"))
+
 
 if __name__ == '__main__':
     unittest.main

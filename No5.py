@@ -1,7 +1,7 @@
 # Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000,
 # and there exists one unique longest palindromic substring.
 
-class Solution:
+class Solution5:
     # @return a string
     def longestPalindrome(self, s):
         lenofstr = len(s)
@@ -46,9 +46,3 @@ class Solution:
 
         return ''.join(resultstr)
 
-
-test = Solution()
-print test.longestPalindrome("abcbe")
-print test.longestPalindrome("abb")
-print test.longestPalindrome("aab")
-print test.longestPalindrome("aaa")

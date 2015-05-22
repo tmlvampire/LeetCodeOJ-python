@@ -20,7 +20,7 @@ __author__ = 'Young'
 # isMatch("ab", ".*") → true
 # isMatch("aab", "c*a*b") → true
 
-class Solution:
+class Solution10:
     # @param s, a string
     # @param p, a string
     # @return a boolean

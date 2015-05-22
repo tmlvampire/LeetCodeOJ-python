@@ -15,7 +15,7 @@ __author__ = 'Young'
 #There is a more generic way of solving this problem.
 
 
-class Solution:
+class Solution9:
     # @param x, an integer
     # @return a boolean
     def isPalindrome(self, x):
