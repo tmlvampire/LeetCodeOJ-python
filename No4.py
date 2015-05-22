@@ -24,9 +24,9 @@ class Solution4:
                     return float( (A[m/2] + max(A[m/2-1], B[n/2-1]))/2.0)
             elif A[m/2] > B[n/2]:
                 x = min(m/2, n/2)-1
-                return Solution.findMedianSortedArrays(self, A[0:m-x], B[x:n])
+                return Solution4.findMedianSortedArrays(self, A[0:m-x], B[x:n])
             elif A[m/2] < B[n/2]:
                 x = min(m/2, n/2)-1
-                return Solution.findMedianSortedArrays(self, A[x:m], B[0:n-x])
+                return Solution4.findMedianSortedArrays(self, A[x:m], B[0:n-x])
             return 0
 
