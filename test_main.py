@@ -8,9 +8,9 @@ from No4 import Solution4
 from No5 import Solution5
 from No6 import Solution6
 from No7 import Solution7
-from No8 import Solution8
-from No9 import Solution9
-from No10 import Solution10
+from No8StringtoIntegeratoi import Solution8
+from No009PalindromeNumber import Solution9
+from No010RegularExpressionMatching import Solution10
 
 
 def func(x):
