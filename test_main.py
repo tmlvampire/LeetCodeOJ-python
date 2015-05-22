@@ -93,7 +93,7 @@ def test_9():
 
 def test_10():
     x = Solution10()
-    assert(False == x.isMatch("aa","a"))
+    assert(False == x.isMatch("aa","a") , "hello Error")
     #assert(True == x.isMatch("aa","aa"))
     assert(False == x.isMatch("aaa","aa"))
     assert(True == x.isMatch("aa","a*"))
