@@ -27,8 +27,6 @@ class Solution10:
     def isMatch(self, s, p):
         length_s = len(s)
         length_p = len(p)
-        if length_s == 0 or length_p == 0:
-            return False
         statusMatrix = [[False for x in range(length_p+1)] for x in range(length_s+1)]
         statusMatrix[0][0] = True
         for j in range(1, length_p+1 , 1):

@@ -100,3 +100,4 @@ def test_10():
     assert(True == x.isMatch("aa",".*"))
     assert(True == x.isMatch("ab",".*"))
     assert(True == x.isMatch("aab","c*a*b"))
+    assert(True == x.isMatch("",".*"))
