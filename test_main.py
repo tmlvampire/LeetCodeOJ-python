@@ -14,6 +14,7 @@ from No010RegularExpressionMatching import Solution10
 from No011 import Solution11
 from No012 import Solution12
 from No013 import Solution13
+from No014 import Solution14
 
 
 def func(x):
@@ -128,4 +129,8 @@ def test_13():
     print x.romanToInt("CDXCIX")
     print x.romanToInt("MMXLVIII")
     print x.romanToInt("MMMI")
+
+def test_14():
+    x = Solution14()
+    assert "ab" == x.longestCommonPrefix(["abcd" , "abccc", "ab"])
 
