@@ -11,6 +11,7 @@ from No7 import Solution7
 from No8StringtoIntegeratoi import Solution8
 from No009PalindromeNumber import Solution9
 from No010RegularExpressionMatching import Solution10
+from No011 import Solution11
 
 
 def func(x):
@@ -101,3 +102,7 @@ def test_10():
     assert(True == x.isMatch("ab",".*"))
     assert(True == x.isMatch("aab","c*a*b"))
     assert(True == x.isMatch("",".*"))
+
+def test_11():
+    x = Solution11()
+    assert x.maxArea([4,3,2,1,2,3,5]) == 24
