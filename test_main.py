@@ -12,6 +12,7 @@ from No8StringtoIntegeratoi import Solution8
 from No009PalindromeNumber import Solution9
 from No010RegularExpressionMatching import Solution10
 from No011 import Solution11
+from No012 import Solution12
 
 
 def func(x):
@@ -106,3 +107,14 @@ def test_10():
 def test_11():
     x = Solution11()
     assert x.maxArea([4,3,2,1,2,3,5]) == 24
+    assert x.maxArea([4,3,2,1,2,3,1]) == 15
+
+def test_12():
+    x = Solution12()
+    print x.intToRoman(999)
+    print x.intToRoman(1999)
+    print x.intToRoman(499)
+    print x.intToRoman(1024)
+    print x.intToRoman(0)
+    print x.intToRoman(2048)
+    print x.intToRoman(3001)
