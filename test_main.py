@@ -13,6 +13,7 @@ from No009PalindromeNumber import Solution9
 from No010RegularExpressionMatching import Solution10
 from No011 import Solution11
 from No012 import Solution12
+from No013 import Solution13
 
 
 def func(x):
@@ -118,3 +119,13 @@ def test_12():
     print x.intToRoman(0)
     print x.intToRoman(2048)
     print x.intToRoman(3001)
+
+def test_13():
+    x = Solution13()
+    print x.romanToInt("CMXCIX")
+    print x.romanToInt("")
+    print x.romanToInt("MCMXCIX")
+    print x.romanToInt("CDXCIX")
+    print x.romanToInt("MMXLVIII")
+    print x.romanToInt("MMMI")
+
