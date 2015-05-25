@@ -15,6 +15,7 @@ from No011 import Solution11
 from No012 import Solution12
 from No013 import Solution13
 from No014 import Solution14
+from No015 import Solution15
 
 
 def func(x):
@@ -133,4 +134,11 @@ def test_13():
 def test_14():
     x = Solution14()
     assert "ab" == x.longestCommonPrefix(["abcd" , "abccc", "ab"])
+
+def test_15():
+    x = Solution15()
+    print x.threeSum([-1,0,1,2,-1,-4])
+    assert [[-1,-1,2],[-1,0,1]] == x.threeSum([-1,0,1,2,-1,-4])
+    assert [[0,0,0]] == x.threeSum([0,0,0,0])
+    assert [[-2,0,2],[-2,1,1]] == x.threeSum([-2,0,1,1,2])
 
