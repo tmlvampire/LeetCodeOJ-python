@@ -17,6 +17,7 @@ from No013 import Solution13
 from No014 import Solution14
 from No015 import Solution15
 from No016 import Solution16
+from No017 import Solution17
 
 
 def func(x):
@@ -147,4 +148,10 @@ def test_16():
     x = Solution16()
     assert 2 == x.threeSumClosest([-1, 2, 1, -4], 1)
     assert 2 == x.threeSumClosest([1, 1, 1, 0], -100)
+
+def test_17():
+    x = Solution17()
+    assert [] == x.letterCombinations("")
+    assert ['z', 'y', 'x', 'w'] == x.letterCombinations("9")
+    assert ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf'] == x.letterCombinations("23")
 
