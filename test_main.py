@@ -16,6 +16,7 @@ from No012 import Solution12
 from No013 import Solution13
 from No014 import Solution14
 from No015 import Solution15
+from No016 import Solution16
 
 
 def func(x):
@@ -141,4 +142,9 @@ def test_15():
     assert [[-1,-1,2],[-1,0,1]] == x.threeSum([-1,0,1,2,-1,-4])
     assert [[0,0,0]] == x.threeSum([0,0,0,0])
     assert [[-2,0,2],[-2,1,1]] == x.threeSum([-2,0,1,1,2])
+
+def test_16():
+    x = Solution16()
+    assert 2 == x.threeSumClosest([-1, 2, 1, -4], 1)
+    assert 2 == x.threeSumClosest([1, 1, 1, 0], -100)
 
