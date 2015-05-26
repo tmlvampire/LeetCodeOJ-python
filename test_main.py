@@ -18,6 +18,7 @@ from No014 import Solution14
 from No015 import Solution15
 from No016 import Solution16
 from No017 import Solution17
+from No018 import Solution18
 
 
 def func(x):
@@ -155,3 +156,6 @@ def test_17():
     assert ['z', 'y', 'x', 'w'] == x.letterCombinations("9")
     assert ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf'] == x.letterCombinations("23")
 
+def test_18():
+    x = Solution18()
+    assert [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]] == x.fourSum([1, 0, -1, 0, -2, 2], 0)
