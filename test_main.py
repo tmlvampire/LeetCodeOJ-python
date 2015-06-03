@@ -19,7 +19,12 @@ from No015 import Solution15
 from No016 import Solution16
 from No017 import Solution17
 from No018 import Solution18
+from No019 import Solution19
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 def func(x):
 	return x + 1
@@ -159,3 +164,22 @@ def test_17():
 def test_18():
     x = Solution18()
     assert [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]] == x.fourSum([1, 0, -1, 0, -2, 2], 0)
+
+def test_19():
+    first = ListNode(1)
+    second = ListNode(2)
+    third = ListNode(3)
+    fourth = ListNode(4)
+    fifth = ListNode(5)
+
+    first.next = second
+    second.next = third
+    third.next = fourth
+    fourth.next = fifth
+
+    x = Solution19()
+    y = x.removeNthFromEnd(first,2)
+    assert y.val == 1
+    assert y.next.val == 2
+    assert y.next.next.val == 3
+    assert y.next.next.next.val == 5
