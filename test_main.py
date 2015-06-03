@@ -20,6 +20,7 @@ from No016 import Solution16
 from No017 import Solution17
 from No018 import Solution18
 from No019 import Solution19
+from No020 import Solution20
 
 class ListNode:
     def __init__(self, x):
@@ -191,3 +192,11 @@ def test_19():
     first.next = second
 
     x.removeNthFromEnd(first, 2)
+
+def test_20():
+    x = Solution20()
+    assert True == x.isValid("[]{}[[]]{{}}")
+    assert False == x.isValid("[]{}[[]]{{}}}}")
+    assert True == x.isValid("")
+    assert False == x.isValid("]")
+    assert False == x.isValid("((])")
