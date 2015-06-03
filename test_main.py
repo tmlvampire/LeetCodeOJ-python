@@ -178,16 +178,16 @@ def test_19():
     fourth.next = fifth
 
     x = Solution19()
-    y = x.removeNthFromEnd(first,2)
+    y = x.removeNthFromEnd(first, 2)
     assert y.val == 1
     assert y.next.val == 2
     assert y.next.next.val == 3
     assert y.next.next.next.val == 5
 
-    x.removeNthFromEnd(null , 0)
+    x.removeNthFromEnd(None, 0)
 
     first = ListNode(1)
     second = ListNode(2)
     first.next = second
 
-    x.removeNthFromEnd(first,2)
+    x.removeNthFromEnd(first, 2)
