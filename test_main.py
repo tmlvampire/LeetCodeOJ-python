@@ -183,3 +183,11 @@ def test_19():
     assert y.next.val == 2
     assert y.next.next.val == 3
     assert y.next.next.next.val == 5
+
+    x.removeNthFromEnd(null , 0)
+
+    first = ListNode(1)
+    second = ListNode(2)
+    first.next = second
+
+    x.removeNthFromEnd(first,2)
