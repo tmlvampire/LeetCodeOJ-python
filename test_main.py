@@ -21,6 +21,7 @@ from No017 import Solution17
 from No018 import Solution18
 from No019 import Solution19
 from No020 import Solution20
+from No021 import Solution021
 
 class ListNode:
     def __init__(self, x):
@@ -200,3 +201,25 @@ def test_20():
     assert True == x.isValid("")
     assert False == x.isValid("]")
     assert False == x.isValid("((])")
+
+def test_21():
+    x = Solution021
+    a1 = ListNode(1)
+    a2 = ListNode(3)
+    a3 = ListNode(5)
+    a1.next = a2
+    a2.next = a3
+
+    b1 = ListNode(0)
+    b2 = ListNode(4)
+    b3 = ListNode(6)
+    b1.next = b2
+    b2.next = b3
+
+    x = Solution021()
+    y = x.mergeTwoLists(a1, None)
+    assert y.next.val == 3
+    y = x.mergeTwoLists(a1, b1)
+    assert y.next.val == 1
+    y = x.mergeTwoLists(None, b1)
+    assert y.next.val == 4
