@@ -34,4 +34,3 @@ class Solution021:
             pre.next = p1
 
         return head.next
-

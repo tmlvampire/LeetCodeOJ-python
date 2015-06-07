@@ -108,7 +108,7 @@ def test_9():
 
 def test_10():
     x = Solution10()
-    assert(False == x.isMatch("aa","a") , "hello Error")
+    assert(False == x.isMatch("aa","a"))
     assert(True == x.isMatch("aa","aa"))
     assert(False == x.isMatch("aaa","aa"))
     assert(True == x.isMatch("aa","a*"))
@@ -203,7 +203,6 @@ def test_20():
     assert False == x.isValid("((])")
 
 def test_21():
-    x = Solution021
     a1 = ListNode(1)
     a2 = ListNode(3)
     a3 = ListNode(5)
@@ -219,7 +218,35 @@ def test_21():
     x = Solution021()
     y = x.mergeTwoLists(a1, None)
     assert y.next.val == 3
+
+    a1 = ListNode(1)
+    a2 = ListNode(3)
+    a3 = ListNode(5)
+    a1.next = a2
+    a2.next = a3
+    a3.next = None
+
+    b1 = ListNode(0)
+    b2 = ListNode(4)
+    b3 = ListNode(6)
+    b1.next = b2
+    b2.next = b3
+    b3.next = None
     y = x.mergeTwoLists(a1, b1)
     assert y.next.val == 1
+
+    a1 = ListNode(1)
+    a2 = ListNode(3)
+    a3 = ListNode(5)
+    a1.next = a2
+    a2.next = a3
+    a3.next = None
+
+    b1 = ListNode(0)
+    b2 = ListNode(4)
+    b3 = ListNode(6)
+    b1.next = b2
+    b2.next = b3
+    b3.next = None
     y = x.mergeTwoLists(None, b1)
     assert y.next.val == 4
