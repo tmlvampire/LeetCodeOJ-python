@@ -22,6 +22,7 @@ from No018 import Solution18
 from No019 import Solution19
 from No020 import Solution20
 from No021 import Solution021
+from No022 import Solution022
 
 class ListNode:
     def __init__(self, x):
@@ -250,3 +251,9 @@ def test_21():
     b3.next = None
     y = x.mergeTwoLists(None, b1)
     assert y.next.val == 4
+
+def test_22():
+    x = Solution022()
+    assert 1 == len(x.generateParenthesis(1))
+    assert 2 == len(x.generateParenthesis(2))
+    assert 5 == len(x.generateParenthesis(3))
