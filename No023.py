@@ -9,7 +9,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-class Solution:
+class Solution023:
     # @param {ListNode[]} lists
     # @return {ListNode}
     def mergeKLists(self, lists):

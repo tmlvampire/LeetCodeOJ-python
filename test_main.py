@@ -23,6 +23,7 @@ from No019 import Solution19
 from No020 import Solution20
 from No021 import Solution021
 from No022 import Solution022
+from No023 import Solution023
 
 class ListNode:
     def __init__(self, x):
@@ -257,3 +258,29 @@ def test_22():
     assert 1 == len(x.generateParenthesis(1))
     assert 2 == len(x.generateParenthesis(2))
     assert 5 == len(x.generateParenthesis(3))
+
+def test_23():
+    x = Solution023()
+
+    a1 = ListNode(1)
+    a2 = ListNode(3)
+    a3 = ListNode(5)
+    a1.next = a2
+    a2.next = a3
+    a3.next = None
+
+    b1 = ListNode(0)
+    b2 = ListNode(4)
+    b3 = ListNode(6)
+    b1.next = b2
+    b2.next = b3
+    b3.next = None
+
+    c1 = ListNode(2)
+    c2 = ListNode(5)
+    c3 = ListNode(8)
+    c1.next = c2
+    c2.next = c3
+    c3.next = None
+
+    x.mergeKLists([a1, b1, c1])
