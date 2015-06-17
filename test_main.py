@@ -24,6 +24,7 @@ from No020 import Solution20
 from No021 import Solution021
 from No022 import Solution022
 from No023 import Solution023
+from No024 import Solution024
 
 class ListNode:
     def __init__(self, x):
@@ -284,3 +285,19 @@ def test_23():
     c3.next = None
 
     x.mergeKLists([a1, b1, c1])
+
+def test_24():
+    x = Solution024()
+
+    a1 = ListNode(1)
+    a2 = ListNode(3)
+    a3 = ListNode(5)
+    a4 = ListNode(7)
+    a1.next = a2
+    a2.next = a3
+    a3.next = a4
+    a4.next = None
+
+    x.swapPairs(a1)
+
+
