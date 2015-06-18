@@ -25,6 +25,7 @@ from No021 import Solution021
 from No022 import Solution022
 from No023 import Solution023
 from No024 import Solution024
+from No025 import Solution025
 
 class ListNode:
     def __init__(self, x):
@@ -300,4 +301,27 @@ def test_24():
 
     x.swapPairs(a1)
 
+def test_25():
+
+    a1 = ListNode(1)
+    a2 = ListNode(2)
+    a3 = ListNode(3)
+    a4 = ListNode(4)
+    a5 = ListNode(5)
+    a1.next = a2
+    a2.next = a3
+    a3.next = a4
+    a4.next = a5
+
+    a6 = ListNode(6)
+    a5.next = a6
+    a7 = ListNode(7)
+    a6.next = a7
+
+    x = Solution025()
+    y = x.reverseKGroup(a1, 3)
+
+    while y:
+        print y.val
+        y = y.next
 
