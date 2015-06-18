@@ -25,3 +25,7 @@ class Solution027:
             while nums[first] != val and first < length-1: first += 1
 
         return first
+
+    def removeElement1(self, nums, val):
+        nums[:] = [x for x in nums if x!=val]
+        return len(nums)

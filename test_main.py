@@ -338,3 +338,4 @@ def test_27():
     x.removeElement([1,2,3,4,5],0)
     x.removeElement([1,2],2)
     x.removeElement([11,1,1,1,1,1,1,5],1)
+    x.removeElement1([11,1,1,1,1,1,1,5],1)
