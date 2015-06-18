@@ -27,6 +27,7 @@ from No023 import Solution023
 from No024 import Solution024
 from No025 import Solution025
 from No026 import Solution026
+from No027 import Solution027
 
 class ListNode:
     def __init__(self, x):
@@ -330,3 +331,10 @@ def test_26():
     x = Solution026()
     x.removeDuplicates([1,1])
     x.removeDuplicates([1,1,2,2,3,3,3,3])
+
+def test_27():
+    x = Solution027()
+    x.removeElement([1],1)
+    x.removeElement([1,2,3,4,5],0)
+    x.removeElement([1,2],2)
+    x.removeElement([11,1,1,1,1,1,1,5],1)
