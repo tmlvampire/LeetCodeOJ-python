@@ -30,9 +30,3 @@ class Solution024:
             second.val = temp
             first = second.next
         return head
-
-
-
-x = Solution024()
-
-a = x.swapPairs()
