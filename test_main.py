@@ -352,3 +352,5 @@ def test_29():
     assert 0 == x.divide(1,2)
     assert 0 == x.divide(1,1000000)
     assert 2147483647 == x.divide(-2147483648,-1)
+    assert -1 == x.divide( 5, -5)
+    assert -1 == x.divide( -5, 5)
