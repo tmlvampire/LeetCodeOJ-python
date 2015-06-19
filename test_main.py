@@ -28,6 +28,8 @@ from No024 import Solution024
 from No025 import Solution025
 from No026 import Solution026
 from No027 import Solution027
+from No028 import Solution028
+from No029 import Solution029
 
 class ListNode:
     def __init__(self, x):
@@ -339,3 +341,14 @@ def test_27():
     x.removeElement([1,2],2)
     x.removeElement([11,1,1,1,1,1,1,5],1)
     x.removeElement1([11,1,1,1,1,1,1,5],1)
+
+def test_28():
+    x = Solution028()
+    print x.strStr("abc","ab")
+    print x.strStr("abc","ac")
+
+def test_29():
+    x = Solution029()
+    assert 0 == x.divide(1,2)
+    assert 0 == x.divide(1,1000000)
+    assert 2147483647 == x.divide(-2147483648,-1)
