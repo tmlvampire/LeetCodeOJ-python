@@ -1,4 +1,5 @@
 __author__ = 'Young'
+__author__ = 'Sophie'
 import math
 from No1 import Solution1
 from No2 import Solution2

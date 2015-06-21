@@ -2,6 +2,7 @@
 
 Using python to go through LeetCode OJ
 
+Here is the status of Project.
 
 [![Build Status](https://travis-ci.org/yyq/LeetCodeOJ-python.svg?branch=master)](https://travis-ci.org/yyq/LeetCodeOJ-python)
 
