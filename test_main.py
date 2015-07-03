@@ -31,6 +31,7 @@ from No026 import Solution026
 from No027 import Solution027
 from No028 import Solution028
 from No029 import Solution029
+from No030 import Solution030
 
 class ListNode:
     def __init__(self, x):
@@ -355,3 +356,7 @@ def test_29():
     assert 2147483647 == x.divide(-2147483648,-1)
     assert -1 == x.divide( 5, -5)
     assert -1 == x.divide( -5, 5)
+
+def test_30():
+    x = Solution030()
+    assert [0,9] == x.findSubstring("barfoothefoobarman", ["foo", "bar"])
