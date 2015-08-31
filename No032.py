@@ -42,7 +42,3 @@ class Solution032(object):
                 i += 1
 
         return max
-
-
-x = Solution032()
-print x.longestValidParentheses("((((()())))")
